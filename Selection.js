@@ -701,7 +701,7 @@ define([
 				row = this.row(rows[i]);
 				selected = row.id in selection ? selection[row.id] : this.allSelected;
 				if (selected) {
-					this.select(row, null, selected);
+					this._select(row, null, selected);
 				}
 			}
 			this._fireSelectionEvents();
